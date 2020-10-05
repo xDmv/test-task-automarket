@@ -1,0 +1,235 @@
+.container {
+  max-width:  1170px;
+  margin: auto;
+  height: auto;
+  font-size: 18px;
+  // background-image: url('../../../assets/images/car.png');
+  .header {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    width: 100%;
+    background: #e2e2e2;
+    opacity: 0.8;
+    padding-bottom: 40px;
+    .logo {
+      justify-content: flex-start;
+      width: 15%;
+    }
+    .menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 40%;
+      padding: 0;
+      ul {
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+    .user-setting {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 50%;
+      img:first-child {
+        padding-right: 30px;
+      }
+      .button {
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        padding: 10px 30px;
+      }
+      .active-button {
+        color: #fff;
+        background: #e6541c;
+        border-radius: 5px;
+        padding: 15px 30px;
+      }
+    }
+
+  }
+  
+  .title {
+    text-align: center;
+    margin-top: 200px;
+    h1 {
+      font-size: 56px;
+      font-weight: bold;
+    }
+    .advanced-search {
+      margin: auto;
+      max-width: 78%;
+      color: #9c9c9c;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-bottom: 5px;
+    }
+    .nav-bar {
+      display: flex;
+      align-items: center;
+      // justify-content: center;
+      margin: auto;
+      max-width: 85%;
+      background: #fff;
+      border-radius: 15px;
+      // border: 1px solid red;
+      .location {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-right: 1px solid #A9A9A9;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 45%;
+        span {
+          width: 100%;
+        }
+        .icon {
+          width: 24px;
+          height: 24px;
+        }
+        .icon:first-child {
+          padding: 0 10px 0 0;
+        }
+        .icon:last-child {
+          width: 16px;
+          height: 16px;
+          padding: 0 0 0 45%;
+        }
+      }
+      .model-car {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-right: 1px solid #A9A9A9;
+        color: #A9A9A9;
+        padding-left: 15px;
+        width: 25%;
+        .icon {
+          width: 16px;
+          height: 16px;
+        }
+        .icon:first-child {
+          padding: 0 10px 0 0;
+        }
+        .icon:last-child {
+          width: 16px;
+          height: 16px;
+          padding: 0 10px 0 10px;
+        }
+      }
+      .price-car {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #A9A9A9;
+        padding-left: 15px;
+        width: 25%;
+        .icon {
+          width: 16px;
+          height: 16px;
+        }
+        .icon:first-child {
+          padding: 0 10px 0 0;
+        }
+        .icon:last-child {
+          padding: 0 15px 0 50px;
+        }
+        // img:last-chaild {
+
+        // }
+      }
+      .search-car {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20%;
+        color: #fff;
+        background-color: #e6541c;
+        border-radius: 0 15px 15px 0;
+        padding: 20px 0;
+        span {
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+
+  .tab {
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 400px;
+    padding: 0 10px;
+    border-bottom: 1px solid #9c9c9c;
+    .default-tab {
+      padding-bottom: 8px;
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    .footer-links {
+      width: 25%;
+      .footer-link-social {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        img {
+          width: 20%;
+        }
+      }
+    }
+    .footer-pages {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 10%;
+    }
+    .footer-store{
+      display: flex;
+      //align-items: flex-end;
+      width: 25%;
+    }
+  }
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: #A9A9A9;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e6541c;
+}
+
+.active {
+  color: #000;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e6541c;
+}
+
+.active-tab {
+  color: #e6541c;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e6541c;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}

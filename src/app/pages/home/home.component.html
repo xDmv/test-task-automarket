@@ -1,0 +1,69 @@
+<div class="container">
+  <app-header></app-header>
+  <div class="title">
+    <h3>Marketplace for buyers and sellers who love cars</h3>
+    <h1>Find your next car here</h1>
+    <span class="advanced-search">Advanced search</span>
+    <nav class="nav-bar">
+      <div class="location">
+        <img src="assets/icons/map-marker.svg" alt="" class="icon">
+        <span>Toronto (+100km)</span>
+        <img src="assets/icons/chevron-down-solid.svg" alt="" class="icon">
+      </div>
+      <div class="model-car">
+        <img src="assets/icons/car-alt-solid.svg" alt="" class="icon">
+        <span>Brand and model</span>
+        <img src="assets/icons/chevron-down-solid.svg" alt="" class="icon">
+      </div>
+      <div class="price-car">
+        <img src="assets/icons/wallet-solid.svg" alt="" class="icon">
+        <span>Max price</span>
+        <img src="assets/icons/chevron-down-solid.svg" alt="" class="icon">
+      </div>
+      <div class="search-car">
+        <img src="assets/icons/search-solid.svg" alt="" class="icon">
+        <span>Search</span>
+      </div>
+    </nav>
+  </div>
+</div>
+  <section>
+    <h3>Market status</h3>
+    <p>Slader 1</p>
+    <div class="slader-1">
+
+    </div>
+  </section>
+  <section>
+    <h3>Continue your serch</h3>
+    <p>All markes, +1 filter</p>
+    <p>Slader 2</p>
+    <div class="carousel">
+      <div class="carousel-cell" *ngFor="let item of Slider2">
+        <img [src]="item.img" alt="">
+        <p>{{ item.distans }}</p>
+        <p>{{ item.price }}</p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="tab">
+      <div>Most selling</div>
+      <div class="active-tab">Best selling</div>
+      <div>Most visited</div>
+    </div>
+    <div class="carouse">Slader 3</div>
+  </section>
+  <section>
+
+  </section>
+  <section>
+
+  </section>
+  <section>
+
+  </section>
+<div class="container">
+  <app-footer></app-footer>
+</div>
+

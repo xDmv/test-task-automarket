@@ -1,1 +1,48 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url('assets/images/car.png');
+  background-size: 100%;
+  background-position-x: center;
+  // background-position-y: 27%;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width:  1170px;
+  margin: auto;
+  height: auto;
+  font-size: 18px; 
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: #A9A9A9;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e6541c;
+}
+
+.active {
+  color: #000;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e6541c;
+}
+
+.active-tab {
+  color: #e6541c;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e6541c;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
