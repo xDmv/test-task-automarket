@@ -9,6 +9,7 @@
     .logo {
         justify-content: flex-start;
         width: 15%;
+        font-weight: bold;
     }
     .menu {
         display: flex;
@@ -45,61 +46,3 @@
     }
 
 }
-
-// .container {
-//     display: flex;
-//     align-items: center;
-//     margin-left: auto;
-//     margin-right: 0;
-//     padding: 1em;
-//     color: #fff;
-//     .menu-toogle {
-//         padding-left: 5px;
-//         padding-right: 5px;
-//     }
-//     .logo {
-//         width: 100%;
-//         padding-left: 5px;
-//         padding-right: 5px;
-//     }
-//     .not-item {
-//         width: 100%;
-//     }
-//     .theme {
-//         padding-left: 5px;
-//         padding-right: 5px;
-//     }
-//     .message {
-//         display: flex;
-//         align-items: center;
-//         justify-content: space-around;
-//         // border-left: 1px solid #c2c2c2;
-//         .chat {
-//             padding: 5px;
-//             // border-right: 1px solid #c2c2c2;
-//         }
-//         .alert {
-//             padding: 5px;
-//         }
-//     }
-//     .profile {
-//         display: flex;
-//         align-items: center;
-//         justify-content: space-around;
-//         // border-left: 1px solid #c2c2c2;
-//         padding: 5px;
-//         .avatar{
-//             display: flex;
-//             align-items: center;
-//             justify-content: space-between;
-//             // width: 100%;
-//             width: max-content;
-//             .ava {
-//                 margin: 5px;
-//             }
-//             .username {
-
-//             }
-//         }
-//     }
-// }

@@ -1,11 +1,59 @@
 <div class="slide-null" *ngIf="type === 'null'">
-    <div class="type-null"></div>
-    <div class="type-null">Slide 2</div>
-    <div class="type-null">Slide 3</div>
-    <div class="type-null">Slide 4</div>
+    <div class="type-null" *ngIf="slideNull === 0"></div>
+    <div class="type-null" *ngIf="slideNull === 1">Slide 2</div>
+    <div class="type-null" *ngIf="slideNull === 2">Slide 3</div>
+    <div class="type-null" *ngIf="slideNull === 3">Slide 4</div>
 
+    <div class="pagination">
+        <div [ngClass]="slideNull === 0 ? 'circle active-circle':'circle'" (click)="onSlideTo(0)"></div>
+        <div [ngClass]="slideNull === 1 ? 'circle active-circle':'circle'" (click)="onSlideTo(1)"></div>
+        <div [ngClass]="slideNull === 2 ? 'circle active-circle':'circle'" (click)="onSlideTo(2)"></div>
+        <div [ngClass]="slideNull === 3 ? 'circle active-circle':'circle'" (click)="onSlideTo(3)"></div>
+    </div>
 </div>
 
-<div class="slide-picture-price">
+<div class="slide-picture-price" *ngIf="type === 'picture-price'">
+    <div class="carousel">
+        <div class="carousel-cell" *ngFor="let item of dataSourse">
+            <img [src]="item.img" alt="">
+            <p class="distans">{{ item.distans }}</p>
+            <p class="price">{{ item.price }}</p>
+        </div>
+        <button class="prev">
+            <img src="assets/icons/long-arrow-left.svg" alt="" class="icon">
+        </button>
+        <button class="next">
+            <img src="assets/icons/arrow-right-solid.svg" alt="" class="icon">
+        </button>
+    </div>
+</div>
 
+<div *ngIf="type === 'by-car'">
+    <div class="carousel">
+        <div class="slide-picture-price" *ngFor="let item of dataSourse">
+            <img [src]="item.img" alt="" class="by-car">
+            <p>{{ item.name }}</p>
+        </div>
+        <button class="prev">
+            <img src="assets/icons/long-arrow-left.svg" alt="" class="icon">
+        </button>
+        <button class="next">
+            <img src="assets/icons/arrow-right-solid.svg" alt="" class="icon">
+        </button>
+    </div>
+</div>
+
+<div *ngIf="type === 'emblem-car'">
+    <div class="carousel">
+        <div class="slide-picture-price" *ngFor="let item of dataSourse">
+            <img [src]="item.img" alt="" class="emblema">
+            <p>{{ item.name }}</p>
+        </div>
+        <button class="prev">
+            <img src="assets/icons/long-arrow-left.svg" alt="" class="icon">
+        </button>
+        <button class="next">
+            <img src="assets/icons/arrow-right-solid.svg" alt="" class="icon">
+        </button>
+    </div>
 </div>

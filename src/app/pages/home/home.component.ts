@@ -40,7 +40,7 @@ export class HomeComponent implements OnInit {
     }
   ]
 
-  Solid3 = [
+  Slider3 = [
     {
       img: "assets/images/slaid2-car1.png",
       logo: "assets/images/slaid2-emblem1.png",
@@ -67,34 +67,34 @@ export class HomeComponent implements OnInit {
     }
   ]
 
-  Solid4 = [
+  Slider4 = [
     {
-      img: "assets/images/slaid3-car1.png",
+      img: "assets/images/slaid3-car1_.png",
       name: "Sedan"
     },
     {
-      img: "assets/images/slaid3-car1.png",
+      img: "assets/images/slaid3-car2_.png",
       name: "SUV / Crossover"
     },
     {
-      img: "assets/images/slaid3-car1.png",
+      img: "assets/images/slaid3-car3_.png",
       name: "Pickup"
     },
     {
-      img: "assets/images/slaid3-car1.png",
+      img: "assets/images/slaid3-car4_.png",
       name: "Coupe"
     },
     {
-      img: "assets/images/slaid3-car1.png",
+      img: "assets/images/slaid3-car5_.png",
       name: "Hatchback"
     },
     {
-      img: "assets/images/slaid3-car1.png",
+      img: "assets/images/slaid3-car6_.png",
       name: "Van"
     }
   ]
 
-  Solid5 = [
+  Slider5 = [
     {
       img: "assets/images/slaid4-car1.png",
       logo: "assets/images/slaid4-emblem1.png",
@@ -121,7 +121,7 @@ export class HomeComponent implements OnInit {
     }
   ]
 
-  Solid6 = [
+  Slider6 = [
     {
       img: "assets/images/slaid5-1.png",
       name: "Peugeot"

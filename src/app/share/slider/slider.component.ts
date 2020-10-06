@@ -7,18 +7,22 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class SliderComponent implements OnInit {
 
+  slideNull: number;
+  @Input() dataSourse: any;
+
   @Input() set typeSlide(value: string) {
     if (value === 'null'){
       this.type = 'null';
+      this.slideNull = 0;
     }
     if (value === 'picture-price'){
-      
+      this.type = 'picture-price';
     }
-    if (value === 'null'){
-      
+    if (value === 'by-car'){
+      this.type = 'by-car';
     }
-    if (value === 'null'){
-      
+    if (value === 'emblem-car'){
+      this.type = 'emblem-car';
     }
   }
 
@@ -29,8 +33,8 @@ export class SliderComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onSlide() {
-
+  onSlideTo(value: number) {
+    this.slideNull = value;
   }
 
 

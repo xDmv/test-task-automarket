@@ -26,27 +26,21 @@
       </div>
     </nav>
   </div>
-</div>
 
-  <section class="container">
+  <section class="sector-market">
     <h3>Market status</h3>
     <div class="slader-1">
     </div>
     <app-slider [typeSlide]="'null'"></app-slider>
   </section>
-  <section>
-    <h3>Continue your serch</h3>
+
+  <section class="sector-search">
+    <h3>Continue your search</h3>
     <p>All markes, +1 filter</p>
-    <p>Slader 2</p>
-    <div class="carousel">
-      <div class="carousel-cell" *ngFor="let item of Slider2">
-        <img [src]="item.img" alt="">
-        <p>{{ item.distans }}</p>
-        <p>{{ item.price }}</p>
-      </div>
-    </div>
+    <app-slider [typeSlide]="'picture-price'" [dataSourse]="Slider2"></app-slider>
   </section>
-  <section>
+
+  <section class="sector-tab">
     <div class="tab">
       <div>Most selling</div>
       <div class="active-tab">Best selling</div>
@@ -54,20 +48,28 @@
     </div>
     <div class="carouse">Slader 3</div>
   </section>
-  <section>
-    <h3>Browser by body type <span>See All <img src="assets/icons/chevron-right-solid.svg" alt="" class="icon"></span></h3>
+
+  <section class="sector-by-body">
+    <h3>Browser by body type <span>See all <img src="assets/icons/chevron-right-solid.svg" alt="" class="icon"></span></h3>
+    <app-slider [typeSlide]="'by-car'" [dataSourse]="Slider4"></app-slider>
   </section>
-  <section>
-    <h3>Most popular in Canada       <div class="location">
-      <img src="assets/icons/map-marker.svg" alt="" class="icon">
-      <span>Toronto (+100km)</span>
-      <img src="assets/icons/chevron-down-solid.svg" alt="" class="icon">
-    </div></h3>
-  </section>
-  <section>
+
+  <section class="most-popular">
+    <h3>Most popular in Canada 
+      <span>
+        <img src="assets/icons/map-marker.svg" alt="" class="icon">
+        <span>Toronto (+100km)</span>
+        <img src="assets/icons/chevron-down-solid.svg" alt="" class="icon">
+      </span>
+    </h3>
 
   </section>
-<div class="container">
+
+  <section class="sector-makes">
+    <h3>Popular makes</h3>
+    <app-slider [typeSlide]="'emblem-car'" [dataSourse]="Slider6"></app-slider>
+  </section>
+
   <app-footer></app-footer>
 </div>
 
