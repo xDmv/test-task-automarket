@@ -36,67 +36,89 @@
     overflow: hidden;
     // max-width: 1440px;
     margin: 0 auto;
-    .carousel-container {
-        display: flex;
-        transition: transform 0.8s ease;
-        justify-content: space-between;
-        padding: 15px 0;
-        .carousel-item {
-            flex: 0 0 25%;
-            max-width: 25%;
-            margin-right: 11px;
-            .slide-content {
-                background: #fff;
-                border-radius: 15px;
-                // border: 1px solid #C0C0C0;
-                box-shadow: 2px 2px 25px -6px rgba(0,0,0,0.48);
-                width: 90%;
-                overflow: hidden;
-                .slide-content-img {
-                    height: 250px;
-                    width: auto;
-                    display: block;
-                    // border: 1px solid #0000f0;
-                    .emblema {
-                        height: 25px;
-                        position: relative;
-                        // height: 50px;
-                        top: -140px;
-                        left: 20px;
-                        z-index: 1;
+    .container-hidden {
+        overflow: hidden; 
+        max-width: 1440px; 
+        margin: 0 auto;
+        .carousel-container {
+            display: flex;
+            transition: transform 0.8s ease;
+            justify-content: space-between;
+            padding: 15px 0;
+            // max-width: 1440px;
+            .carousel-item {
+                flex: 0 0 25%;
+                max-width: 25%;
+                margin-right: 12px;
+                .slide-content {
+                    background: #fff;
+                    border-radius: 15px;
+                    // border: 1px solid #C0C0C0;
+                    box-shadow: 2px 2px 25px -6px rgba(0,0,0,0.48);
+                    width: 90%;
+                    overflow: hidden;
+                    .slide-content-img {
+                        height: 250px;
+                        width: auto;
+                        display: block;
+                        // border: 1px solid #0000f0;
+                        .emblema {
+                            height: 25px;
+                            position: relative;
+                            // height: 50px;
+                            top: -140px;
+                            left: 20px;
+                            z-index: 1;
+                        }
+                        .lattice {
+                            position: relative;
+                            top: 20px;
+                            left: 40px;
+                            z-index: 0;
+                        }
+                        .car {
+                            position: relative;
+                            left: 20px;
+                            bottom: 140px;
+                            height: 220px;
+                            z-index: 2;
+                        }
                     }
-                    .lattice {
-                        position: relative;
-                        top: 20px;
-                        left: 40px;
-                        z-index: 0;
+                    .car-year { 
+                        color: #c2c2c2;
+                        padding: 0 0 0 20px;
                     }
-                    .car {
-                        position: relative;
-                        left: 20px;
-                        bottom: 140px;
-                        height: 220px;
-                        z-index: 2;
+                    .car-name {
+                        padding: 0 0 0 20px;
                     }
-                }
-                .car-year { 
-                    color: #c2c2c2;
-                    padding: 0 0 0 20px;
-                }
-                .car-name {
-                    padding: 0 0 0 20px;
-                }
-                .slide-item-active {
-                    border-top: 2px solid #e8e8e8;
-                    text-align: center;
-                    .icon {
-                        width: 16px;
-                        height: 16px;
-                        padding-left: 20px;
+                    .slide-item-active {
+                        border-top: 2px solid #e8e8e8;
+                        text-align: center;
+                        .icon {
+                            width: 16px;
+                            height: 16px;
+                            padding-left: 20px;
+                        }
                     }
                 }
             }
         }
+    }
+
+    .prev {
+        border: none;
+        background: transparent;
+        position: absolute;
+        left: 15%;
+        top: 50%;
+        opacity: 0.3;
+    }
+    .next {
+        border: none;
+        background: transparent;
+        position: absolute;
+        right: 15%;
+        top: 50%;
     }
 }
 // .best-selling {

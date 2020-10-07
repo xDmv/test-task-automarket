@@ -9,9 +9,10 @@ export class SliderComponent implements OnInit {
 
   slideNull: number;
   activeItem: boolean;
+  translateX: string;
+  coefficient: number;
   shown = null;
   @Input() dataSourse: any;
-  @Input() dataSourse2: any;
 
   @Input() set typeSlide(value: string) {
     if (value === 'null'){
@@ -34,7 +35,9 @@ export class SliderComponent implements OnInit {
 
   type: string;
 
-  constructor() { }
+  constructor() { 
+    this.coefficient = 0;
+  }
 
   ngOnInit(): void {
   }
@@ -50,6 +53,23 @@ export class SliderComponent implements OnInit {
 
   onHideItem() {
     this.activeItem = false;
+  }
+
+  onPrev() {
+    let x = this.dataSourse.length - 4;
+    if( this.coefficient >= x ) return;
+    this.coefficient ++;
+    const transform = 25*1.03 * this.coefficient;
+    console.log('transform: ', transform)
+    this.translateX = `translateX(-${transform}%)`;
+  }
+
+  onNext(){
+    let x = this.dataSourse.length - 4;
+    if( this.coefficient === 0 ) return;
+    this.coefficient = this.coefficient - 1;
+    const transform = (25*1.03 * this.coefficient) * -1;
+    this.translateX = `translateX(${transform}%)`;
   }
 
   toggleShown(index) {
