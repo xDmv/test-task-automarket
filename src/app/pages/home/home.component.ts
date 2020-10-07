@@ -77,12 +77,12 @@ export class HomeComponent implements OnInit {
       item_active: "851 offers"
     },
     {
-      img: "assets/images/slaid2-car3.png",
-      logo: "assets/images/slaid2-emblem3.png",
+      img: "assets/images/slaid2-car2.png",
+      logo: "assets/images/slaid2-emblem2.png",
       year: "2019",
-      name: "Taoyta Prius AWD 2",
-      item_active: "5 221 offers"
-    },
+      name: "Chevrolett Express Cargo2",
+      item_active: "851 offers"
+    }
   ]
 
   Slider4 = [
