@@ -9,6 +9,7 @@ export class SliderComponent implements OnInit {
 
   slideNull: number;
   @Input() dataSourse: any;
+  @Input() dataSourse2: any;
 
   @Input() set typeSlide(value: string) {
     if (value === 'null'){
@@ -20,6 +21,9 @@ export class SliderComponent implements OnInit {
     }
     if (value === 'by-car'){
       this.type = 'by-car';
+    }
+    if (value === 'best-selling'){
+      this.type = 'best-selling';
     }
     if (value === 'emblem-car'){
       this.type = 'emblem-car';

@@ -1,6 +1,6 @@
 .type-null {
     background: #fff;
-    height: 450px;
+    height: 470px;
     width: 100%;
     border-radius: 15px;
     box-shadow: 2px 2px 25px -6px rgba(0,0,0,0.48);
@@ -31,6 +31,111 @@
     border: 1px solid #e6541c;
 }
 
+.best-selling {
+    position: relative;
+    overflow: hidden;
+    // max-width: 1440px;
+    margin: 0 auto;
+    .carousel-container {
+        display: flex;
+        transition: transform 0.8s ease;
+        justify-content: space-between; 
+        .carousel-item {
+            flex: 0 0 25%;
+            max-width: 25%;
+            margin-right: 11px;
+            .slide-content {
+                background: #fff;
+                border-radius: 15px;
+                box-shadow: 2px 2px 25px -6px rgba(0,0,0,0.48);
+                width: 90%;
+                overflow: hidden;
+                .slide-content-img {
+                    height: 250px;
+                    width: auto;
+                    display: block;
+                    // border: 1px solid #0000f0;
+                    .emblema {
+                        height: 25px;
+                        position: relative;
+                        // height: 50px;
+                        top: -140px;
+                        left: 20px;
+                        z-index: 1;
+                    }
+                    .lattice {
+                        position: relative;
+                        top: 20px;
+                        left: 40px;
+                        z-index: 0;
+                    }
+                    .car {
+                        position: relative;
+                        left: 20px;
+                        bottom: 140px;
+                        height: 220px;
+                        z-index: 2;
+                    }
+                }
+                .car-year { 
+                    color: #c2c2c2;
+                    padding: 0 0 0 20px;
+                }
+                .car-name {
+                    padding: 0 0 0 20px;
+                }
+            }
+        }
+    }
+}
+// .best-selling {
+//     margin-top: 20px;
+//     display: flex;
+//     // align-items: center;
+//     justify-content: space-between;
+//     .carousel-item {
+//         width: 250px;
+//         height: 300px;
+//         border-radius: 15px;
+//         box-shadow: 2px 2px 25px -6px rgba(0,0,0,0.48);
+//         background: #fff;
+//         overflow: hidden;
+        
+//         .car {
+//             width: auto;
+//             height: 165px;
+//             margin: 60px 0px 0px 50px;
+//             overflow-x: hidden;
+//         }
+//         .emblema {
+//             width: 35px;
+//             height: auto;
+//             position: absolute;
+//             margin: 15px;
+//         }
+//         .car-year {
+//             color: #c2c2c2;
+//             margin: 5px 10px;
+//         }
+//         .car-name {
+//             margin: 5px 10px;
+//         }
+//     }
+//     .prev {
+//         border: none;
+//         background: transparent;
+//         position: absolute;
+//         left: 8%;
+//         opacity: 0.3;
+//     }
+//     .next {
+//         border: none;
+//         background: transparent;
+//         position: absolute;
+//         right: 8%;
+//     }
+// }
+
 .carousel {
     display: flex;
     align-items: center;
@@ -41,6 +146,7 @@
         height: 165px;
         text-align: center;
         box-shadow: 2px 2px 25px -6px rgba(0,0,0,0.48);
+        background: #fff;
         img {
             border-radius: 15px 15px 0 0;
             width: 100%;
@@ -59,6 +165,7 @@
         height: 150px;
         text-align: center;
         box-shadow: 2px 2px 25px -6px rgba(0,0,0,0.48);
+        background: #fff;
         .by-car {
             border-radius: 15px 15px 0 0;
             width: 85%;
@@ -80,14 +187,14 @@
         border: none;
         background: transparent;
         position: absolute;
-        left: 15%;
+        left: 8%;
         opacity: 0.3;
     }
     .next {
         border: none;
         background: transparent;
         position: absolute;
-        right: 15%;
+        right: 8%;
     }
 }
 

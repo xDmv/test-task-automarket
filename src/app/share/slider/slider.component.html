@@ -34,13 +34,29 @@
             <img [src]="item.img" alt="" class="by-car">
             <p>{{ item.name }}</p>
         </div>
-        <button class="prev">
-            <img src="assets/icons/long-arrow-left.svg" alt="" class="icon">
-        </button>
-        <button class="next">
-            <img src="assets/icons/arrow-right-solid.svg" alt="" class="icon">
-        </button>
     </div>
+</div>
+
+<div class="best-selling" *ngIf="type === 'best-selling'">
+    <div class="carousel-container">
+        <div class="carousel-item" *ngFor="let item of dataSourse">
+            <div class="slide-content">
+                <div class="slide-content-img">
+                    <img [src]="item.logo" alt="" class="emblema">
+                    <img src="assets/images/lattice.png" alt="" class="lattice">
+                    <img [src]="item.img" alt="" class="car">
+                </div>
+                <p class="car-year">{{ item.year }}</p>
+                <p class="car-name">{{ item.name }}</p>
+            </div>
+        </div>
+    </div>
+    <button class="prev">
+        <img src="assets/icons/long-arrow-left.svg" alt="" class="icon">
+    </button>
+    <button class="next">
+        <img src="assets/icons/arrow-right-solid.svg" alt="" class="icon">
+    </button>
 </div>
 
 <div *ngIf="type === 'emblem-car'">
