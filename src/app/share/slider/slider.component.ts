@@ -8,6 +8,8 @@ import { Component, OnInit, Input } from '@angular/core';
 export class SliderComponent implements OnInit {
 
   slideNull: number;
+  activeItem: boolean;
+  shown = null;
   @Input() dataSourse: any;
   @Input() dataSourse2: any;
 
@@ -41,5 +43,25 @@ export class SliderComponent implements OnInit {
     this.slideNull = value;
   }
 
+  onShowItem() {
+    this.activeItem = true;
+    console.log('true');
+  }
+
+  onHideItem() {
+    this.activeItem = false;
+  }
+
+  toggleShown(index) {
+    if (this.onShow(index)) {
+			this.shown = null;
+    } else {
+      this.shown = index;
+    }
+  }
+
+  onShow(index) {
+    return this.shown === index;
+  }
 
 }

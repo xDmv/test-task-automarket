@@ -39,8 +39,8 @@
 
 <div class="best-selling" *ngIf="type === 'best-selling'">
     <div class="carousel-container">
-        <div class="carousel-item" *ngFor="let item of dataSourse">
-            <div class="slide-content">
+        <div class="carousel-item" *ngFor="let item of dataSourse; let i = index;">
+            <div class="slide-content" (click)="toggleShown('index' + i)" >
                 <div class="slide-content-img">
                     <img [src]="item.logo" alt="" class="emblema">
                     <img src="assets/images/lattice.png" alt="" class="lattice">
@@ -48,10 +48,13 @@
                 </div>
                 <p class="car-year">{{ item.year }}</p>
                 <p class="car-name">{{ item.name }}</p>
+                <div *ngIf="onShow('index' + i)" class="slide-item-active"  (mouseleave)="onHideItem()">
+                    <p> {{ item.item_active }}<img src="assets/icons/chevron-right-solid.svg" alt="" class="icon"></p>
+                </div>
             </div>
         </div>
     </div>
-    <button class="prev">
+    <button class="prev" >
         <img src="assets/icons/long-arrow-left.svg" alt="" class="icon">
     </button>
     <button class="next">
