@@ -45,32 +45,44 @@ export class HomeComponent implements OnInit {
       img: "assets/images/slaid2-car1.png",
       logo: "assets/images/slaid2-emblem1.png",
       year: "2019",
-      name: "BMW series 5"
+      name: "BMW series 5",
+      item_active: "9 128 offers"
     },
     {
       img: "assets/images/slaid2-car2.png",
       logo: "assets/images/slaid2-emblem2.png",
       year: "2018",
-      name: "Chevrolett Express Cargo"
+      name: "Chevrolett Express Cargo",
+      item_active: "4 651 offers"
     },
     {
       img: "assets/images/slaid2-car3.png",
       logo: "assets/images/slaid2-emblem3.png",
       year: "2019",
-      name: "Taoyta Prius AWD"
+      name: "Taoyta Prius AWD",
+      item_active: "4 221 offers"
     },
     {
       img: "assets/images/slaid2-car4.png",
       logo: "assets/images/slaid2-emblem4.png",
       year: "2019",
-      name: "Ford F -150"
+      name: "Ford F -150",
+      item_active: "3 365 offers"
     },
     {
       img: "assets/images/slaid2-car2.png",
       logo: "assets/images/slaid2-emblem2.png",
       year: "2019",
-      name: "Chevrolett Express Cargo2"
-    }
+      name: "Chevrolett Express Cargo2",
+      item_active: "851 offers"
+    },
+    {
+      img: "assets/images/slaid2-car3.png",
+      logo: "assets/images/slaid2-emblem3.png",
+      year: "2019",
+      name: "Taoyta Prius AWD 2",
+      item_active: "5 221 offers"
+    },
   ]
 
   Slider4 = [
@@ -105,25 +117,29 @@ export class HomeComponent implements OnInit {
       img: "assets/images/slaid4-car1.png",
       logo: "assets/images/slaid4-emblem1.png",
       year: "2020",
-      name: "BMW series 5"
+      name: "BMW series 5",
+      item_active: "14 341 offers"
     },
     {
       img: "assets/images/slaid4-car2.png",
       logo: "assets/images/slaid4-emblem2.png",
       year: "2020",
-      name: "Ford Mustang GT"
+      name: "Ford Mustang GT",
+      item_active: "1 420 offers"
     },
     {
       img: "assets/images/slaid4-car3.png",
       logo: "assets/images/slaid4-emblem3.png",
       year: "2019",
-      name: "Taoyta RAV4 AWD"
+      name: "Taoyta RAV4 AWD",
+      item_active: "651 offers"
     },
     {
       img: "assets/images/slaid4-car4.png",
       logo: "assets/images/slaid4-emblem4.png",
       year: "2020",
-      name: "Honda CR-V Hybrid"
+      name: "Honda CR-V Hybrid",
+      item_active: "2 951 offers"
     }
   ]
 
