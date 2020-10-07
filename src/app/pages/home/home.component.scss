@@ -1,5 +1,5 @@
 .container {
-  max-width:  1170px;
+  max-width:  1440px;
   margin: auto;
   height: auto;
   font-size: 18px;
@@ -131,8 +131,8 @@
         padding-left: 15px;
         width: 25%;
         .icon {
-          width: 16px;
-          height: 16px;
+          width: 24px;
+          height: 24px;
         }
         .icon:first-child {
           padding: 0 10px 0 0;
@@ -181,7 +181,7 @@
       max-width: 400px;
       padding: 0 10px;
       border-bottom: 1px solid #9c9c9c;
-      
+      margin-bottom: 25px;
       .default-tab {
         padding-bottom: 8px;
       }
@@ -262,6 +262,7 @@
 
   .sector-makes {
     margin-top: 150px;
+    margin-bottom: 150px;
     h3 {
       font-size: 36px;
     }

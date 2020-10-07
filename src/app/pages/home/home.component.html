@@ -18,7 +18,7 @@
       <div class="price-car">
         <img src="assets/icons/wallet-solid.svg" alt="" class="icon">
         <span>Max price</span>
-        <img src="assets/icons/chevron-down-solid.svg" alt="" class="icon">
+        <img src="assets/icons/up_down.svg" alt="" class="icon">
       </div>
       <div class="search-car">
         <img src="assets/icons/search-solid.svg" alt="" class="icon">
@@ -46,7 +46,7 @@
       <div class="active-tab">Best selling</div>
       <div>Most visited</div>
     </div>
-    <div class="carouse">Slader 3</div>
+    <app-slider [typeSlide]="'best-selling'" [dataSourse]="Slider3"></app-slider>
   </section>
 
   <section class="sector-by-body">
@@ -62,7 +62,7 @@
         <img src="assets/icons/chevron-down-solid.svg" alt="" class="icon">
       </span>
     </h3>
-
+    <app-slider [typeSlide]="'best-selling'" [dataSourse]="Slider5"></app-slider>
   </section>
 
   <section class="sector-makes">

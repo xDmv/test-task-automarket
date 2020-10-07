@@ -64,6 +64,12 @@ export class HomeComponent implements OnInit {
       logo: "assets/images/slaid2-emblem4.png",
       year: "2019",
       name: "Ford F -150"
+    },
+    {
+      img: "assets/images/slaid2-car2.png",
+      logo: "assets/images/slaid2-emblem2.png",
+      year: "2019",
+      name: "Chevrolett Express Cargo2"
     }
   ]
 
