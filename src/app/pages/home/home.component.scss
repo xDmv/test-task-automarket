@@ -2,62 +2,19 @@
   max-width:  1440px;
   margin: auto;
   height: auto;
-  font-size: 18px;
-  // background-image: url('../../../assets/images/car.png');
-  .header {
-    display: flex;
-    align-items: center;
-    padding-top: 50px;
-    width: 100%;
-    background: #e2e2e2;
-    opacity: 0.8;
-    padding-bottom: 40px;
-    .logo {
-      justify-content: flex-start;
-      width: 15%;
-    }
-    .menu {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 40%;
-      padding: 0;
-      ul {
-        padding: 0;
-        margin: 0;
-      }
-    }
-
-    .user-setting {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      width: 50%;
-      img:first-child {
-        padding-right: 30px;
-      }
-      .button {
-        display: flex;
-        align-items: center;
-        border-radius: 5px;
-        padding: 10px 30px;
-      }
-      .active-button {
-        color: #fff;
-        background: #e6541c;
-        border-radius: 5px;
-        padding: 15px 30px;
-      }
-    }
-
-  }
+  // font-size: 18px;
   
   .title {
     text-align: center;
     margin-top: 250px;
     h1 {
-      font-size: 56px;
+      font-family: 'ProximaNova-Bold';
+      font-size: 72px;
       font-weight: bold;
+    }
+    h3 {
+      font-family: 'ProximaNova-Light';
+      font-size: 32px;
     }
     .advanced-search {
       margin: auto;

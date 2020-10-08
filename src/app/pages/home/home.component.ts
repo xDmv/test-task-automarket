@@ -87,27 +87,27 @@ export class HomeComponent implements OnInit {
 
   Slider4 = [
     {
-      img: "assets/images/slaid3-car1_.png",
+      img: "assets/images/slaid3-car1.png",
       name: "Sedan"
     },
     {
-      img: "assets/images/slaid3-car2_.png",
+      img: "assets/images/slaid3-car2.png",
       name: "SUV / Crossover"
     },
     {
-      img: "assets/images/slaid3-car3_.png",
+      img: "assets/images/slaid3-car3.png",
       name: "Pickup"
     },
     {
-      img: "assets/images/slaid3-car4_.png",
+      img: "assets/images/slaid3-car4.png",
       name: "Coupe"
     },
     {
-      img: "assets/images/slaid3-car5_.png",
+      img: "assets/images/slaid3-car5.png",
       name: "Hatchback"
     },
     {
-      img: "assets/images/slaid3-car6_.png",
+      img: "assets/images/slaid3-car6.png",
       name: "Van"
     }
   ]
