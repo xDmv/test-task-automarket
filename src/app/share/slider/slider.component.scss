@@ -194,8 +194,8 @@
     }
     .slide-picture-price {
         border-radius: 15px;
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
         text-align: center;
         box-shadow: 2px 2px 25px -6px rgba(0,0,0,0.48);
         background: #fff;
@@ -205,6 +205,12 @@
             height: auto;
             padding-top: 25px;
         }
+        .name-type {
+            margin: 0;
+            padding-top: 25px;
+            font-family: 'ProximaNova-Bold';
+            font-size: 21px;
+        }
         .emblema {
             border-radius: 15px 15px 0 0;
             width: 75px;
@@ -213,7 +219,7 @@
         }
         p {
             margin: 0;
-            padding: 10px;
+            padding-top: 25px;
         }
     }
     .prev {
