@@ -8,18 +8,36 @@
     padding-bottom: 40px;
     .logo {
         justify-content: flex-start;
-        width: 15%;
-        font-weight: bold;
+        width: 20%;
+        font-family: 'ProximaNova-Bold';
+        font-size: 24px;
     }
     .menu {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 40%;
+        width: 50%;
         padding: 0;
-        ul {
-            padding: 0;
-            margin: 0;
+        a {
+            color: #A9A9A9;
+            text-decoration: none;
+            font-family: 'ProximaNova-Regular';
+            font-size: 24px;
+        }
+        
+        a:hover {
+            color: #000;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e6541c;
+            font-family: 'ProximaNova-Bold';
+            font-size: 24px;
+        }
+        .active {
+            color: #000;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e6541c;
+            font-family: 'ProximaNova-Bold';
+            font-size: 24px;
         }
     }
 
@@ -36,12 +54,16 @@
             align-items: center;
             border-radius: 5px;
             padding: 10px 30px;
+            font-family: 'ProximaNova-Regular';
+            font-size: 24px;
         }
         .active-button {
             color: #fff;
             background: #e6541c;
             border-radius: 5px;
-            padding: 15px 30px;
+            padding: 15px 40px;
+            font-family: 'ProximaNova-Regular';
+            font-size: 21px;
         }
     }
 
